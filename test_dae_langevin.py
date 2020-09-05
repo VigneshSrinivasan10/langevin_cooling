@@ -138,5 +138,6 @@ if __name__ == '__main__':
                 gif_visuals += [visuals]
                 print('processing (%04d)-th image and Langevin step: (%04d)... %s' % (i, j, img_path))
                 save_images(webpage, all_visuals, img_path, aspect_ratio=opt.aspect_ratio, width=opt.display_winsize)
-                save_gif(webpage, gif_visuals, img_path, aspect_ratio=opt.aspect_ratio, width=opt.display_winsize)
+                if opt.save_gifs:
+                    save_gif(webpage, gif_visuals, img_path, aspect_ratio=opt.aspect_ratio, width=opt.display_winsize)
     webpage.save()  # save the HTML

@@ -23,6 +23,8 @@ class TestOptions(BaseOptions):
         parser.add_argument('--temp', type=float, default=0.001, help='aspect ratio of result images')
         #parser.add_argument('--noise_std', type=float, default=1.0, help='aspect ratio of result images')
 
+        parser.add_argument('--save_gifs', action='store_true', help='save_gifs optionally')
+        
         # rewrite devalue values
         parser.set_defaults(model='test')
         # To avoid cropping, the load_size should be the same as crop_size
