@@ -1,6 +1,3 @@
-
-<br><br><br>
-
 # Langevin Cooling (L-Cool)
 
 This code repository reproduces the results for the paper "Langevin Cooling for Domain Translation".
@@ -9,15 +6,13 @@ This code repository reproduces the results for the paper "Langevin Cooling for 
 
 This code has utilized majority of the code from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/) and [Tiramisu](https://github.com/bfortuner/pytorch_tiramisu). The extension consists of implementation of Langevin dynamics which was written by Vignesh Srinivasan.
 
-
-To utilize Langevin Dynamics for CycleGAN, perform the following steps:
-
-
 ### Requirements
     pytorch 
     python >= 3
     cv2
     imageio
+
+To utilize Langevin Dynamics for CycleGAN, perform the following steps:
 
 ## 1. CycleGAN
 
