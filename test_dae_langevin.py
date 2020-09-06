@@ -57,7 +57,6 @@ if __name__ == '__main__':
     else:
         NotImplementedError(' [%s] is not yet trained', opt.name)
 
-    opt.checkpoints_dir = '../cyclegan/pytorch-CycleGAN-and-pix2pix/checkpoints'
     model = create_model(opt)      # create a model given opt.model and other options
     model.setup(opt)               # regular setup: load and print networks; create schedulers
     
